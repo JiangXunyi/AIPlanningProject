@@ -60,18 +60,7 @@ class tournaments():
         """
         device = get_device()
         model_path = "src/models/" + agent_name + ".pth"
-
-        # if agent_name == "dqn":
-        #     agent = torch.load(model_path)
-        # elif agent_name == "nfsp":
-        #     agent = NFSPAgent.from_checkpoint(torch.load(model_path))
-        # elif agent_name == "random":
-        #     agent = RandomAgent.from_checkpoint(torch.load(model_path))
-        # elif agent_name == "human":
-        #     agent = human_agents()
-        # elif agent_name == "dmc":
-        #     agent = dmc_agent.from_checkpoint(torch.load(model_path))
-        
+                
         return torch.load(model_path)
     
 
