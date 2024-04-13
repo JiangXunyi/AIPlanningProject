@@ -1,5 +1,7 @@
 import os
 import argparse
+import matplotlib.pyplot as plt
+import pickle
 
 import torch
 
@@ -27,10 +29,11 @@ def train(args):
         args.env,
         config={
             'seed': args.seed,
+            'game_num_players': args.num_players,
         }
     )
 
-    # Initialize the agent and use random agents as opponents
+    # Initialize the agent and use dmc agents as opponents
     if args.algorithm == 'dqn':
         from rlcard.agents import DQNAgent
         agent = DQNAgent(
@@ -50,7 +53,7 @@ def train(args):
         )
     agents = [agent]
     for _ in range(1, env.num_players):
-        agents.append(RandomAgent(num_actions=env.num_actions))
+        agents.append(torch.load("src/models/dmc.pth"))
     env.set_agents(agents)
 
     # Start training
@@ -70,7 +73,7 @@ def train(args):
             # Here, we assume that DQN always plays the first position
             # and the other players play randomly (if any)
             for ts in trajectories[0]:
-                agent.feed(ts)
+                loss = agent.feed(ts)
 
             # Evaluate the performance. Play with random agents.
             if episode % args.evaluate_every == 0:
@@ -87,6 +90,17 @@ def train(args):
 
     # Plot the learning curve
     plot_curve(csv_path, fig_path, args.algorithm)
+
+    # Plot loss curve
+    if args.algorithm == 'dqn':
+        plt.plot(loss)
+        plt.xlabel('Training Steps')
+        plt.ylabel('Loss')
+        plt.title('DQN Loss')
+        # save the picture and loss
+        plt.savefig('src/results/limited_holdem_results/DQN_loss.png')
+        with open('src/results/limited_holdem_results/DQN_loss.pkl', 'wb') as f:
+            pickle.dump(loss, f)
 
     # Save model
     save_path = os.path.join(args.log_dir, 'model.pth')
@@ -148,10 +162,29 @@ if __name__ == '__main__':
     parser.add_argument(
         '--log_dir',
         type=str,
-        default='experiments/limited_holdem_dqn_result2/',
+        default='src/results/limited_holdem_results/test1',
+    )
+    parser.add_argument(
+        '--num_players',
+        type=int,
+        default=2,
+    )
+    parser.add_argument(
+        '--debug',
+        action='store_true',
+        default=False,
     )
 
     args = parser.parse_args()
+
+    if args.debug:
+        args.num_episodes = 1000
+        args.num_eval_games = 10
+        args.evaluate_every = 1
+        args.log_dir = 'src/results/limited_holdem_results/debug'
+        args.num_players = 4
+        args.algorithm = 'dqn'
+        args.env = 'limit-holdem'
 
     os.environ["CUDA_VISIBLE_DEVICES"] = args.cuda
     train(args)
