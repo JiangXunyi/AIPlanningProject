@@ -36,7 +36,7 @@ while (True):
     print(">> Start a new game")
 
     trajectories, payoffs = env.run(is_training=False)
-    print(trajectories)
+    # print(trajectories)
     # If the human does not take the final action, we need to
     # print other players action
     if len(trajectories[0]) != 0:
