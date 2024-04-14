@@ -80,4 +80,13 @@ if __name__ == '__main__':
         "src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.95/model.pth"
     ]
     tournament = tournaments(agent_paths = agent_paths)
+
+    # new tournament using updated model
+    agent_paths = [
+        "src/models/dmc.pth",
+        "src/models/nfsp.pth",
+        "src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth",
+    ]
+    tournament2 = tournaments(agent_paths = agent_paths)
     tournament.game()
+    tournament2.game()
