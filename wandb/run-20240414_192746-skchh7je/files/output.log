@@ -1,0 +1,90 @@
+--> Running on the CPU
+[128, 128]
+72
+[128, 128]
+72
+INFO - Step 128, rl-loss: 3.533850908279419
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 1128, rl-loss: 4.3530616760253915
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 2128, rl-loss: 3.2428402900695888
+INFO - Copied model parameters to target network.
+
+
+
+
+
+INFO - Step 3128, rl-loss: 2.14212918281555184
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 4128, rl-loss: 6.54878377914428717
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 5128, rl-loss: 2.12938404083251954
+INFO - Copied model parameters to target network.
+
+
+
+
+
+INFO - Step 6128, rl-loss: 3.37564849853515623
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 7128, rl-loss: 10.1822519302368164
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 8128, rl-loss: 1.71206235885620124
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 9128, rl-loss: 1.37069892883300786
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 10128, rl-loss: 2.67170310020446783
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 11128, rl-loss: 1.37479209899902345
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 12128, rl-loss: 5.04752302169799853
+INFO - Copied model parameters to target network.
+
+INFO - Step 13128, rl-loss: 0.63934046030044564
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 14128, rl-loss: 1.76886963844299327
+INFO - Copied model parameters to target network.
+
+INFO - Step 15128, rl-loss: 1.15921080112457284
+INFO - Copied model parameters to target network.
+
+INFO - Step 16128, rl-loss: 0.88701844215393074
+INFO - Copied model parameters to target network.
+INFO - Step 16496, rl-loss: 6.845675945281982src/results/limited_holdem_results/lr=1e-05_mlp=[128,128]_bs=32_df=0.99/model.pth
+Model saved in src/results/limited_holdem_results/lr=1e-05_mlp=[128,128]_bs=32_df=0.99/model.pth
