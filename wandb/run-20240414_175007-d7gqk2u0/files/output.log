@@ -1,0 +1,11 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'log_dir' was locked by 'sweep' (ignored update).
+--> Running on the CPU
+[128, 128]
+72
+[128, 128]
+72
+INFO - Step 100, rl-loss: 3.246626377105713
+INFO - Copied model parameters to target network.
+INFO - Step 123, rl-loss: 4.913562774658203src/results/limited_holdem_results/test1/model.pth
+Model saved in src/results/limited_holdem_results/test1/model.pth

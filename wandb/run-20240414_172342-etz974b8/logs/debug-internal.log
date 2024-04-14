@@ -1,0 +1,188 @@
+2024-04-14 17:23:42,116 INFO    StreamThr :80740 [internal.py:wandb_internal():86] W&B internal server running at pid: 80740, started at: 2024-04-14 17:23:42.115688
+2024-04-14 17:23:42,117 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: status
+2024-04-14 17:23:42,123 INFO    WriterThread:80740 [datastore.py:open_for_write():85] open: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/run-etz974b8.wandb
+2024-04-14 17:23:42,123 DEBUG   SenderThread:80740 [sender.py:send():380] send: header
+2024-04-14 17:23:42,136 DEBUG   SenderThread:80740 [sender.py:send():380] send: run
+2024-04-14 17:23:42,681 INFO    SenderThread:80740 [dir_watcher.py:__init__():211] watching files in: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files
+2024-04-14 17:23:42,681 INFO    SenderThread:80740 [sender.py:_start_run_threads():1122] run started: etz974b8 with start time 1713086622.115219
+2024-04-14 17:23:42,693 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: check_version
+2024-04-14 17:23:42,693 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: check_version
+2024-04-14 17:23:42,761 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: run_start
+2024-04-14 17:23:42,767 DEBUG   HandlerThread:80740 [system_info.py:__init__():32] System info init
+2024-04-14 17:23:42,768 DEBUG   HandlerThread:80740 [system_info.py:__init__():47] System info init done
+2024-04-14 17:23:42,768 INFO    HandlerThread:80740 [system_monitor.py:start():194] Starting system monitor
+2024-04-14 17:23:42,768 INFO    SystemMonitor:80740 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-14 17:23:42,768 INFO    HandlerThread:80740 [system_monitor.py:probe():214] Collecting system info
+2024-04-14 17:23:42,768 DEBUG   HandlerThread:80740 [system_info.py:probe():196] Probing system
+2024-04-14 17:23:42,768 INFO    SystemMonitor:80740 [interfaces.py:start():190] Started cpu monitoring
+2024-04-14 17:23:42,769 INFO    SystemMonitor:80740 [interfaces.py:start():190] Started disk monitoring
+2024-04-14 17:23:42,772 INFO    SystemMonitor:80740 [interfaces.py:start():190] Started gpuapple monitoring
+2024-04-14 17:23:42,773 INFO    SystemMonitor:80740 [interfaces.py:start():190] Started memory monitoring
+2024-04-14 17:23:42,774 INFO    SystemMonitor:80740 [interfaces.py:start():190] Started network monitoring
+2024-04-14 17:23:42,777 DEBUG   HandlerThread:80740 [system_info.py:_probe_git():181] Probing git
+2024-04-14 17:23:42,789 DEBUG   HandlerThread:80740 [system_info.py:_probe_git():189] Probing git done
+2024-04-14 17:23:42,789 DEBUG   HandlerThread:80740 [system_info.py:probe():244] Probing system done
+2024-04-14 17:23:42,789 DEBUG   HandlerThread:80740 [system_monitor.py:probe():223] {'os': 'macOS-14.4-arm64-arm-64bit', 'python': '3.10.13', 'heartbeatAt': '2024-04-14T09:23:42.768588', 'startedAt': '2024-04-14T09:23:42.104973', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py', 'codePathLocal': 'src/training/dqn_training.py', 'codePath': 'src/training/dqn_training.py', 'git': {'remote': 'https://github.com/JiangXunyi/AIPlanningProject.git', 'commit': 'd6e3f5b286930ba90ae9da4c5533ff797ed7440b'}, 'email': '12010938@mail.sustech.edu.cn', 'root': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject', 'host': 'Buggenegmachine', 'username': 'xunyijiang', 'executable': '/opt/miniconda3/envs/pytorch/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 314.3198127746582}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-04-14 17:23:42,789 INFO    HandlerThread:80740 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-14 17:23:42,789 INFO    HandlerThread:80740 [system_monitor.py:probe():227] Publishing system info
+2024-04-14 17:23:42,789 DEBUG   HandlerThread:80740 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-04-14 17:23:42,790 DEBUG   HandlerThread:80740 [system_info.py:_save_pip():68] Saving pip packages done
+2024-04-14 17:23:42,790 DEBUG   HandlerThread:80740 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-04-14 17:23:42,792 ERROR   HandlerThread:80740 [system_info.py:_save_conda():86] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 82, in _save_conda
+    subprocess.call(
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-04-14 17:23:42,793 DEBUG   HandlerThread:80740 [system_info.py:_save_conda():87] Saving conda packages done
+2024-04-14 17:23:42,794 INFO    HandlerThread:80740 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-14 17:23:42,795 DEBUG   SenderThread:80740 [sender.py:send():380] send: files
+2024-04-14 17:23:42,795 INFO    SenderThread:80740 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-04-14 17:23:42,799 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-14 17:23:42,799 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-14 17:23:42,799 DEBUG   SenderThread:80740 [sender.py:send():380] send: telemetry
+2024-04-14 17:23:42,799 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: stop_status
+2024-04-14 17:23:43,141 DEBUG   SenderThread:80740 [sender.py:send():380] send: telemetry
+2024-04-14 17:23:43,141 DEBUG   SenderThread:80740 [sender.py:send():380] send: exit
+2024-04-14 17:23:43,141 INFO    SenderThread:80740 [sender.py:send_exit():585] handling exit code: 1
+2024-04-14 17:23:43,141 INFO    SenderThread:80740 [sender.py:send_exit():587] handling runtime: 0
+2024-04-14 17:23:43,141 INFO    SenderThread:80740 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-14 17:23:43,141 INFO    SenderThread:80740 [sender.py:send_exit():593] send defer
+2024-04-14 17:23:43,141 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,141 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-14 17:23:43,141 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,141 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-04-14 17:23:43,142 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 1
+2024-04-14 17:23:43,142 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,142 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-14 17:23:43,142 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,142 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-04-14 17:23:43,142 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 2
+2024-04-14 17:23:43,142 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,142 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-14 17:23:43,142 INFO    HandlerThread:80740 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-14 17:23:43,142 INFO    HandlerThread:80740 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-14 17:23:43,142 DEBUG   SystemMonitor:80740 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-14 17:23:43,142 DEBUG   SystemMonitor:80740 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-14 17:23:43,142 DEBUG   SystemMonitor:80740 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-14 17:23:43,142 INFO    HandlerThread:80740 [interfaces.py:finish():202] Joined disk monitor
+2024-04-14 17:23:43,281 INFO    HandlerThread:80740 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-04-14 17:23:43,281 INFO    HandlerThread:80740 [interfaces.py:finish():202] Joined memory monitor
+2024-04-14 17:23:43,281 INFO    HandlerThread:80740 [interfaces.py:finish():202] Joined network monitor
+2024-04-14 17:23:43,281 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,281 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-04-14 17:23:43,281 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 3
+2024-04-14 17:23:43,281 DEBUG   SenderThread:80740 [sender.py:send():380] send: telemetry
+2024-04-14 17:23:43,281 DEBUG   SenderThread:80740 [sender.py:send():380] send: stats
+2024-04-14 17:23:43,282 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,282 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-14 17:23:43,282 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 4
+2024-04-14 17:23:43,282 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,282 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-14 17:23:43,282 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 5
+2024-04-14 17:23:43,282 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,282 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-14 17:23:43,282 DEBUG   SenderThread:80740 [sender.py:send():380] send: summary
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-04-14 17:23:43,282 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 6
+2024-04-14 17:23:43,282 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,282 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-14 17:23:43,282 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,282 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-04-14 17:23:43,284 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: status_report
+2024-04-14 17:23:43,515 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 7
+2024-04-14 17:23:43,515 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:43,515 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-14 17:23:43,515 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:43,515 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-04-14 17:23:43,564 INFO    wandb-upload_0:80740 [upload_job.py:push():131] Uploaded file /var/folders/ph/35nx213151gfc98gbz9pxw580000gn/T/tmprsw7vv5bwandb/vwcorsfb-wandb-metadata.json
+2024-04-14 17:23:43,690 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/config.yaml
+2024-04-14 17:23:43,691 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/conda-environment.yaml
+2024-04-14 17:23:43,691 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/output.log
+2024-04-14 17:23:43,691 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/requirements.txt
+2024-04-14 17:23:43,691 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/wandb-metadata.json
+2024-04-14 17:23:43,692 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/wandb-summary.json
+2024-04-14 17:23:44,089 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-14 17:23:45,699 INFO    Thread-12 :80740 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/output.log
+2024-04-14 17:23:47,148 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 8
+2024-04-14 17:23:47,148 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: poll_exit
+2024-04-14 17:23:47,149 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:47,149 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-14 17:23:47,149 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:47,149 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-04-14 17:23:47,149 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 9
+2024-04-14 17:23:47,149 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:47,149 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-14 17:23:47,149 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:47,149 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-04-14 17:23:47,149 INFO    SenderThread:80740 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-14 17:23:47,710 INFO    SenderThread:80740 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/output.log
+2024-04-14 17:23:47,711 INFO    SenderThread:80740 [dir_watcher.py:finish():388] scan: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files
+2024-04-14 17:23:47,711 INFO    SenderThread:80740 [dir_watcher.py:finish():402] scan save: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/requirements.txt requirements.txt
+2024-04-14 17:23:47,711 INFO    SenderThread:80740 [dir_watcher.py:finish():402] scan save: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/output.log output.log
+2024-04-14 17:23:47,715 INFO    SenderThread:80740 [dir_watcher.py:finish():402] scan save: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/config.yaml config.yaml
+2024-04-14 17:23:47,715 INFO    SenderThread:80740 [dir_watcher.py:finish():402] scan save: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/wandb-summary.json wandb-summary.json
+2024-04-14 17:23:47,721 INFO    SenderThread:80740 [dir_watcher.py:finish():402] scan save: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/conda-environment.yaml conda-environment.yaml
+2024-04-14 17:23:47,724 INFO    SenderThread:80740 [dir_watcher.py:finish():402] scan save: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/wandb-metadata.json wandb-metadata.json
+2024-04-14 17:23:47,724 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 10
+2024-04-14 17:23:47,724 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:47,724 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-14 17:23:47,725 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:47,725 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-04-14 17:23:47,725 INFO    SenderThread:80740 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-14 17:23:48,277 INFO    wandb-upload_2:80740 [upload_job.py:push():131] Uploaded file /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/config.yaml
+2024-04-14 17:23:48,296 INFO    wandb-upload_0:80740 [upload_job.py:push():131] Uploaded file /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/requirements.txt
+2024-04-14 17:23:49,105 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: keepalive
+2024-04-14 17:23:49,285 INFO    wandb-upload_3:80740 [upload_job.py:push():131] Uploaded file /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/wandb-summary.json
+2024-04-14 17:23:49,378 INFO    wandb-upload_1:80740 [upload_job.py:push():131] Uploaded file /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/files/output.log
+2024-04-14 17:23:49,583 INFO    Thread-11 (_thread_body):80740 [sender.py:transition_state():613] send defer: 11
+2024-04-14 17:23:49,583 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:49,583 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-14 17:23:49,584 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:49,584 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-04-14 17:23:49,584 INFO    SenderThread:80740 [file_pusher.py:join():181] waiting for file pusher
+2024-04-14 17:23:49,584 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 12
+2024-04-14 17:23:49,584 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:49,584 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-14 17:23:49,584 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:49,584 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-04-14 17:23:49,584 INFO    SenderThread:80740 [file_stream.py:finish():595] file stream finish called
+2024-04-14 17:23:49,809 INFO    SenderThread:80740 [file_stream.py:finish():599] file stream finish is done
+2024-04-14 17:23:49,809 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 13
+2024-04-14 17:23:49,809 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:49,809 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-14 17:23:49,810 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:49,810 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-04-14 17:23:49,810 INFO    SenderThread:80740 [sender.py:transition_state():613] send defer: 14
+2024-04-14 17:23:49,810 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: defer
+2024-04-14 17:23:49,810 INFO    HandlerThread:80740 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-14 17:23:49,810 DEBUG   SenderThread:80740 [sender.py:send():380] send: final
+2024-04-14 17:23:49,810 DEBUG   SenderThread:80740 [sender.py:send():380] send: footer
+2024-04-14 17:23:49,810 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: defer
+2024-04-14 17:23:49,810 INFO    SenderThread:80740 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-04-14 17:23:49,811 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-14 17:23:49,812 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-14 17:23:49,812 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: server_info
+2024-04-14 17:23:49,812 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-14 17:23:49,812 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-14 17:23:49,812 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: job_info
+2024-04-14 17:23:49,812 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: poll_exit
+2024-04-14 17:23:49,813 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: server_info
+2024-04-14 17:23:50,037 DEBUG   SenderThread:80740 [sender.py:send_request():407] send_request: job_info
+2024-04-14 17:23:50,038 DEBUG   HandlerThread:80740 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-14 17:23:50,039 INFO    HandlerThread:80740 [handler.py:finish():866] shutting down handler
+2024-04-14 17:23:50,817 INFO    WriterThread:80740 [datastore.py:close():294] close: /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_172342-etz974b8/run-etz974b8.wandb
+2024-04-14 17:23:51,038 INFO    SenderThread:80740 [sender.py:finish():1534] shutting down sender
+2024-04-14 17:23:51,039 INFO    SenderThread:80740 [file_pusher.py:finish():175] shutting down file pusher
+2024-04-14 17:23:51,039 INFO    SenderThread:80740 [file_pusher.py:join():181] waiting for file pusher

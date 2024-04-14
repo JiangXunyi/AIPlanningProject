@@ -1,0 +1,1 @@
+{"loss": 4.649010181427002, "_timestamp": 1713089316.306664, "_runtime": 2.662497043609619, "_step": 116, "DQN_performance": -0.80625, "DMC_performance": 2.31675, "Random_performance": -1.5105, "_wandb": {"runtime": 2}}

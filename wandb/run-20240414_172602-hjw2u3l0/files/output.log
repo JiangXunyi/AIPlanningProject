@@ -1,0 +1,13 @@
+--> Running on the CPU
+[128, 128]
+72
+[128, 128]
+72
+Logs saved in src/results/limited_holdem_results/test1
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'log_dir' was locked by 'sweep' (ignored update).
+Traceback (most recent call last):
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 100, in train
+    loss = agent.feed(ts)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/rlcard/agents/dqn_agent.py", line 141, in feed
+    return loss
+UnboundLocalError: local variable 'loss' referenced before assignment

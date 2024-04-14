@@ -1,0 +1,35 @@
+2024-04-14 17:18:43,263 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Configure stats pid to 78611
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Loading settings from /Users/xunyijiang/.config/wandb/settings
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Loading settings from /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/settings
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'AIPlanningProject', 'entity': 'nus-wing', 'root_dir': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject', 'sweep_id': 'jv0t3p7k', 'run_id': 'p40cj37x', 'sweep_param_path': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/sweep-jv0t3p7k/config-p40cj37x.yaml'}
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/training/dqn_training.py', 'program_abspath': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py', 'program': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py'}
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_init.py:_log_setup():528] Logging user logs to /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_171843-p40cj37x/logs/debug.log
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240414_171843-p40cj37x/logs/debug-internal.log
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():568] calling init triggers
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():575] wandb.init called with sweep_config: {'algorithm': 'dqn', 'batch_size': 128, 'cuda': '', 'debug': False, 'discount_factor': 0.9, 'env': 'limit-holdem', 'eps_start': 1, 'evaluate_every': 100, 'learning_rate': 5e-05, 'log_dir': 'src/results/limited_holdem_results/test1', 'mlp_layers': [128, 128], 'num_episodes': 50, 'num_eval_games': 2000, 'num_players': 3, 'seed': 42, 'train_every': 1, 'upate_target_every': 1000}
+config: {}
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():618] starting backend
+2024-04-14 17:18:43,264 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():622] setting up manager
+2024-04-14 17:18:43,271 INFO    Thread-9 (_run_job):78611 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-14 17:18:43,274 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():628] backend started and connected
+2024-04-14 17:18:43,286 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_config_callback():1324] config_cb None None {'algorithm': 'dqn', 'batch_size': 128, 'cuda': '', 'debug': False, 'discount_factor': 0.9, 'env': 'limit-holdem', 'eps_start': 1, 'evaluate_every': 100, 'learning_rate': 5e-05, 'log_dir': 'src/results/limited_holdem_results/test1', 'mlp_layers': [128, 128], 'num_episodes': 50, 'num_eval_games': 2000, 'num_players': 3, 'seed': 42, 'train_every': 1, 'upate_target_every': 1000}
+2024-04-14 17:18:43,288 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():720] updated telemetry
+2024-04-14 17:18:43,307 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-04-14 17:18:43,880 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_on_init():2220] communicating current version
+2024-04-14 17:18:43,949 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-04-14 17:18:43,949 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():804] starting run threads in backend
+2024-04-14 17:18:46,295 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_console_start():2199] atexit reg
+2024-04-14 17:18:46,296 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2024-04-14 17:18:46,296 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2024-04-14 17:18:46,296 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_redirect():2144] Redirects installed.
+2024-04-14 17:18:46,296 INFO    Thread-9 (_run_job):78611 [wandb_init.py:init():845] run started, returning control to user process
+2024-04-14 17:18:47,645 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_finish():1934] finishing run nus-wing/AIPlanningProject/p40cj37x
+2024-04-14 17:18:47,645 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 1
+2024-04-14 17:18:47,645 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_restore():2151] restore
+2024-04-14 17:18:47,645 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_restore():2157] restore done
+2024-04-14 17:18:52,207 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-04-14 17:18:52,208 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-04-14 17:18:52,214 INFO    Thread-9 (_run_job):78611 [wandb_run.py:_footer_sync_info():3558] logging synced files

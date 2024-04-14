@@ -1,0 +1,92 @@
+--> Running on the CPU
+[32, 32]
+72
+[32, 32]
+72
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'log_dir' was locked by 'sweep' (ignored update).
+INFO - Step 100, rl-loss: 2.0102405548095703
+INFO - Copied model parameters to target network.
+
+
+
+
+
+INFO - Step 1100, rl-loss: 1.7934103012084965
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 2100, rl-loss: 1.76839435100555425
+INFO - Copied model parameters to target network.
+
+
+
+
+INFO - Step 3100, rl-loss: 4.42187070846557673
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 4100, rl-loss: 0.35574120283126834
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 5100, rl-loss: 0.62786626815795944
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 6100, rl-loss: 3.44443535804748547
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 7100, rl-loss: 4.41267251968383855
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 8100, rl-loss: 0.52881807088851937
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 9100, rl-loss: 12.2471332550048836
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 10100, rl-loss: 5.39398765563964897
+INFO - Copied model parameters to target network.
+
+
+
+
+
+INFO - Step 11100, rl-loss: 0.57214879989624026
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 12100, rl-loss: 4.34206008911132817
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 13100, rl-loss: 0.63941037654876713
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 14100, rl-loss: 9.89208316802978547
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 15100, rl-loss: 1.08286535739898686
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 16100, rl-loss: 7.19855499267578146
+INFO - Copied model parameters to target network.
+INFO - Step 16848, rl-loss: 0.51944440603256235
+Logs saved in src/results/limited_holdem_results/test1
+Model saved in src/results/limited_holdem_results/test1/model.pth
