@@ -1,0 +1,104 @@
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72
+INFO - Step 128, rl-loss: 5.605769157409668
+INFO - Copied model parameters to target network.
+
+INFO - Step 628, rl-loss: 1.2496602535247803
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 1128, rl-loss: 1.88753986358642586
+INFO - Copied model parameters to target network.
+
+INFO - Step 1628, rl-loss: 2.25709652900695833
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 2128, rl-loss: 2.02618622779846216
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 2628, rl-loss: 0.52051222324371344
+INFO - Copied model parameters to target network.
+
+INFO - Step 3128, rl-loss: 0.28621840476989746
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 3628, rl-loss: 0.88816344738006595
+INFO - Copied model parameters to target network.
+INFO - Step 4128, rl-loss: 0.41648831963539124
+INFO - Copied model parameters to target network.
+
+INFO - Step 4628, rl-loss: 0.54696613550186167
+INFO - Copied model parameters to target network.
+
+INFO - Step 5128, rl-loss: 3.31670832633972176
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 5628, rl-loss: 0.58797472715377816
+INFO - Copied model parameters to target network.
+INFO - Step 6128, rl-loss: 1.04896700382232676
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 6628, rl-loss: 2.39952564239501954
+INFO - Copied model parameters to target network.
+INFO - Step 7128, rl-loss: 0.76298105716705323
+INFO - Copied model parameters to target network.
+
+
+
+INFO - Step 7628, rl-loss: 1.09099066257476857
+INFO - Copied model parameters to target network.
+
+INFO - Step 8128, rl-loss: 11.9185075759887795
+INFO - Copied model parameters to target network.
+INFO - Step 8628, rl-loss: 1.35226535797119143
+INFO - Copied model parameters to target network.
+
+INFO - Step 9128, rl-loss: 3.07978987693786634
+INFO - Copied model parameters to target network.
+INFO - Step 9628, rl-loss: 12.3076286315917975
+INFO - Copied model parameters to target network.
+
+INFO - Step 10128, rl-loss: 4.52175235748291136
+INFO - Copied model parameters to target network.
+
+INFO - Step 10628, rl-loss: 0.90944886207580577
+INFO - Copied model parameters to target network.
+INFO - Step 11128, rl-loss: 3.24704194068908734
+INFO - Copied model parameters to target network.
+
+
+INFO - Step 11628, rl-loss: 0.49392405152320865
+INFO - Copied model parameters to target network.
+INFO - Step 12128, rl-loss: 22.2031860351562534
+INFO - Copied model parameters to target network.
+
+INFO - Step 12628, rl-loss: 0.93300658464431767
+INFO - Copied model parameters to target network.
+INFO - Step 13128, rl-loss: 12.3927164077758796
+INFO - Copied model parameters to target network.
+
+INFO - Step 13628, rl-loss: 6.66811752319335934
+INFO - Copied model parameters to target network.
+INFO - Step 14128, rl-loss: 0.72329372167587286
+INFO - Copied model parameters to target network.
+INFO - Step 14628, rl-loss: 3.20920109748840336
+INFO - Copied model parameters to target network.
+
+INFO - Step 15128, rl-loss: 0.87876182794570927
+INFO - Copied model parameters to target network.
+INFO - Step 15628, rl-loss: 10.4852209091186526
+INFO - Copied model parameters to target network.
+
+INFO - Step 16128, rl-loss: 0.79202860593795785
+INFO - Copied model parameters to target network.
+INFO - Step 16220, rl-loss: 1.0638445615768433src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth
+Model saved in src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth

@@ -1,0 +1,10 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'log_dir' was locked by 'sweep' (ignored update).
+Traceback (most recent call last):
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 98, in train
+    loss = agent.fed(ts)
+AttributeError: 'DQNAgent' object has no attribute 'fed'
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72

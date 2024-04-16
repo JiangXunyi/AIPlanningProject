@@ -1,0 +1,10 @@
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72
+INFO - Step 100, rl-loss: 6.114445209503174
+INFO - Copied model parameters to target network.
+INFO - Step 112, rl-loss: 5.0548744201660165
+
+INFO - Step 116, rl-loss: 5.482419013977051Model saved in src/results/limited_holdem_results/test1/model.pth

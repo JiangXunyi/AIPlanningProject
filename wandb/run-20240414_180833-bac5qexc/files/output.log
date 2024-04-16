@@ -1,0 +1,19 @@
+<class 'wandb.sdk.wandb_config.Config'>
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72
+Traceback (most recent call last):
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 128, in train
+    torch.save(agent, save_path)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/serialization.py", line 610, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/serialization.py", line 484, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/serialization.py", line 455, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: Parent directory src/results/limited_holdem_results/lr=1e-05_mlp=[64, 64]_bs=64_df=0.9 does not exist.
+INFO - Step 100, rl-loss: 6.076618671417236
+INFO - Copied model parameters to target network.
+INFO - Step 116, rl-loss: 4.649010181427002src/results/limited_holdem_results/lr=1e-05_mlp=[64, 64]_bs=64_df=0.9/model.pth

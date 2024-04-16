@@ -1,0 +1,14 @@
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72
+----------------------------------------
+  episode      |  0
+  reward       |  -0.80625
+----------------------------------------
+INFO - Step 100, rl-loss: 6.092075347900391
+INFO - Copied model parameters to target network.
+INFO - Step 104, rl-loss: 5.609308719635011
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'log_dir' was locked by 'sweep' (ignored update).
+/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/rlcard/utils/utils.py:237: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.

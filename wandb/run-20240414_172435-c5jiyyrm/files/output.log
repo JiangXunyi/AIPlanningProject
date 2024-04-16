@@ -1,0 +1,6 @@
+
+--> Running on the CPU
+Traceback (most recent call last):
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 56, in train
+    agent = DQNAgent(
+TypeError: DQNAgent.__init__() got an unexpected keyword argument 'uupdate_target_estimator_every'

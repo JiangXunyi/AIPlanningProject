@@ -1,0 +1,11 @@
+--> Running on the CPU
+[32, 32]
+72
+[32, 32]
+72
+Traceback (most recent call last):
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 83, in train
+    args.log_dir = 'src/results/limited_holdem_results/' + create_log_dir_name(args)
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 25, in create_log_dir_name
+    parts = [f"{params_short[i]}={getattr(args, params_to_include[i])}" for i in len(params_to_include)]
+TypeError: 'int' object is not iterable

@@ -1,0 +1,93 @@
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Configure stats pid to 13691
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Loading settings from /Users/xunyijiang/.config/wandb/settings
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Loading settings from /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/settings
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'AIPlanningProject', 'entity': 'nus-wing', 'root_dir': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject', 'run_id': '02ldimu4', 'sweep_param_path': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/sweep-et40tgns/config-02ldimu4.yaml', 'sweep_id': 'et40tgns'}
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-15 15:24:16,044 INFO    Thread-11 (_run_job):13691 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/training/dqn_training.py', 'program_abspath': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py', 'program': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py'}
+2024-04-15 15:24:16,045 INFO    Thread-11 (_run_job):13691 [wandb_init.py:_log_setup():528] Logging user logs to /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240415_152416-02ldimu4/logs/debug.log
+2024-04-15 15:24:16,045 INFO    Thread-11 (_run_job):13691 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240415_152416-02ldimu4/logs/debug-internal.log
+2024-04-15 15:24:16,045 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():568] calling init triggers
+2024-04-15 15:24:16,045 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():575] wandb.init called with sweep_config: {'algorithm': 'dqn', 'batch_size': 32, 'cuda': '', 'debug': False, 'discount_factor': 0.9, 'env': 'limit-holdem', 'eps_start': 1, 'evaluate_every': 100, 'learning_rate': 0.0001, 'log_dir': 'src/results/limited_holdem_results/test1', 'mlp_layers': [64, 64], 'num_episodes': 5000, 'num_eval_games': 2000, 'num_players': 3, 'seed': 42, 'train_every': 1, 'update_target_estimator_every': 2000}
+config: {}
+2024-04-15 15:24:16,045 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():618] starting backend
+2024-04-15 15:24:16,045 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():622] setting up manager
+2024-04-15 15:24:16,055 INFO    Thread-11 (_run_job):13691 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-15 15:24:16,055 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():628] backend started and connected
+2024-04-15 15:24:16,062 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_config_callback():1324] config_cb None None {'algorithm': 'dqn', 'batch_size': 32, 'cuda': '', 'debug': False, 'discount_factor': 0.9, 'env': 'limit-holdem', 'eps_start': 1, 'evaluate_every': 100, 'learning_rate': 0.0001, 'log_dir': 'src/results/limited_holdem_results/test1', 'mlp_layers': [64, 64], 'num_episodes': 5000, 'num_eval_games': 2000, 'num_players': 3, 'seed': 42, 'train_every': 1, 'update_target_estimator_every': 2000}
+2024-04-15 15:24:16,075 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():720] updated telemetry
+2024-04-15 15:24:16,091 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-04-15 15:24:16,694 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_on_init():2220] communicating current version
+2024-04-15 15:24:16,763 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-04-15 15:24:16,763 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():804] starting run threads in backend
+2024-04-15 15:24:16,798 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_console_start():2199] atexit reg
+2024-04-15 15:24:16,798 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2024-04-15 15:24:16,798 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2024-04-15 15:24:16,798 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_redirect():2144] Redirects installed.
+2024-04-15 15:24:16,798 INFO    Thread-11 (_run_job):13691 [wandb_init.py:init():845] run started, returning control to user process
+2024-04-15 15:27:13,840 INFO    Thread-3 (_heartbeat):13691 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x13d01bd00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x13d01bd00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 366, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x13d01bd00>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2024-04-15 15:28:44,024 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_finish():1934] finishing run nus-wing/AIPlanningProject/02ldimu4
+2024-04-15 15:28:44,025 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2024-04-15 15:28:44,025 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_restore():2151] restore
+2024-04-15 15:28:44,025 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_restore():2157] restore done
+2024-04-15 15:38:59,928 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-04-15 15:38:59,930 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-04-15 15:38:59,941 INFO    Thread-11 (_run_job):13691 [wandb_run.py:_footer_sync_info():3558] logging synced files

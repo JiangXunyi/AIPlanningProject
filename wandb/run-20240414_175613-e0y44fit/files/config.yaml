@@ -1,0 +1,80 @@
+wandb_version: 1
+
+algorithm:
+  desc: null
+  value: dqn
+batch_size:
+  desc: null
+  value: 64
+cuda:
+  desc: null
+  value: ''
+debug:
+  desc: null
+  value: false
+discount_factor:
+  desc: null
+  value: 0.9
+env:
+  desc: null
+  value: limit-holdem
+eps_start:
+  desc: null
+  value: 1
+evaluate_every:
+  desc: null
+  value: 100
+learning_rate:
+  desc: null
+  value: 5.0e-05
+log_dir:
+  desc: null
+  value: src/results/limited_holdem_results/test1
+mlp_layers:
+  desc: null
+  value:
+  - 64
+  - 64
+num_episodes:
+  desc: null
+  value: 50
+num_eval_games:
+  desc: null
+  value: 2000
+num_players:
+  desc: null
+  value: 3
+seed:
+  desc: null
+  value: 42
+train_every:
+  desc: null
+  value: 1
+update_target_estimator_every:
+  desc: null
+  value: 1000
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.15.12
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1713088573.145492
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 23
+      - 37
+      4: 3.10.13
+      5: 0.15.12
+      8:
+      - 4
+      - 5
+      13: darwin-arm64

@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.4-arm64-arm-64bit",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-04-14T11:15:43.488739",
+    "startedAt": "2024-04-14T11:15:42.871678",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py",
+    "codePathLocal": "src/training/dqn_training.py",
+    "codePath": "src/training/dqn_training.py",
+    "git": {
+        "remote": "https://github.com/JiangXunyi/AIPlanningProject.git",
+        "commit": "32e050fdb00ff9ce4b950de0409cfc272945f4a0"
+    },
+    "email": "12010938@mail.sustech.edu.cn",
+    "root": "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject",
+    "host": "Buggenegmachine",
+    "username": "xunyijiang",
+    "executable": "/opt/miniconda3/envs/pytorch/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 315.99076080322266
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

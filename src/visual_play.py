@@ -14,7 +14,7 @@ player_num = input("Please input the number of players (default is 2): ")
 if player_num == '2':
     agent_names = ['dmc']
 else:
-    agent_names = np.random.choice(['dmc','nfsp','dqn'], int(player_num)-1, replace=True)
+    agent_names = np.random.choice(['dmc','nfsp','dqn','dqn_best'], int(player_num)-1, replace=True)
 
 model_paths = ["src/models/" + agent_name + ".pth" for agent_name in agent_names]
 agents = [torch.load(model_path) for model_path in model_paths]

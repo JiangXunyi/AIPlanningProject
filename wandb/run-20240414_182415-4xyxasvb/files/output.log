@@ -1,0 +1,17 @@
+--> Running on the CPU
+[32, 32]
+72
+[32, 32]
+72
+Traceback (most recent call last):
+  File "/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py", line 102, in train
+    loss = agent.feed(ts)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/rlcard/agents/dqn_agent.py", line 140, in feed
+    loss = self.train()
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/rlcard/agents/dqn_agent.py", line 205, in train
+    state_batch, action_batch, reward_batch, next_state_batch, done_batch, legal_actions_batch = self.memory.sample()
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/site-packages/rlcard/agents/dqn_agent.py", line 533, in sample
+    samples = random.sample(self.memory, self.batch_size)
+  File "/opt/miniconda3/envs/pytorch/lib/python3.10/random.py", line 482, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative

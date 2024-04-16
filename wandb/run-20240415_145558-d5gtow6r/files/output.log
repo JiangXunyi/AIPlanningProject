@@ -1,0 +1,80 @@
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72
+INFO - Step 128, rl-loss: 5.605769157409668
+INFO - Copied model parameters to target network.
+
+
+
+
+
+
+
+
+
+INFO - Step 2128, rl-loss: 4.40225315093994157
+INFO - Copied model parameters to target network.
+
+
+
+
+
+
+
+
+INFO - Step 4128, rl-loss: 1.85762321949005136
+INFO - Copied model parameters to target network.
+
+
+
+
+
+
+
+
+
+INFO - Step 6128, rl-loss: 2.08931612968444823
+INFO - Copied model parameters to target network.
+
+
+
+
+
+
+
+INFO - Step 8128, rl-loss: 1.76022970676422127
+INFO - Copied model parameters to target network.
+
+
+
+
+
+INFO - Step 10128, rl-loss: 0.98224437236785896
+INFO - Copied model parameters to target network.
+
+
+
+
+
+
+INFO - Step 12128, rl-loss: 13.8136377334594734
+INFO - Copied model parameters to target network.
+
+
+
+
+
+INFO - Step 14128, rl-loss: 3.70180869102478036
+INFO - Copied model parameters to target network.
+
+
+
+
+
+
+INFO - Step 16128, rl-loss: 4.36740398406982424
+INFO - Copied model parameters to target network.
+INFO - Step 16442, rl-loss: 3.2580599784851074src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth
+Model saved in src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth

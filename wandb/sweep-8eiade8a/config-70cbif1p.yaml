@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch_size:
+  value: 128
+discount_factor:
+  value: 0.95
+learning_rate:
+  value: 1.0e-05
+mlp_layers:
+  value:
+  - 128
+  - 128
