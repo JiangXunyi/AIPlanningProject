@@ -1,0 +1,38 @@
+wandb_version: 1
+
+algorithm:
+  value: dqn
+batch_size:
+  value: 32
+cuda:
+  value: ''
+debug:
+  value: false
+discount_factor:
+  value: 0.9
+env:
+  value: limit-holdem
+eps_start:
+  value: 1
+evaluate_every:
+  value: 100
+learning_rate:
+  value: 0.0001
+log_dir:
+  value: src/results/limited_holdem_results/test1
+mlp_layers:
+  value:
+  - 64
+  - 64
+num_episodes:
+  value: 5000
+num_eval_games:
+  value: 2000
+num_players:
+  value: 3
+seed:
+  value: 42
+train_every:
+  value: 1
+update_target_estimator_every:
+  value: 2000

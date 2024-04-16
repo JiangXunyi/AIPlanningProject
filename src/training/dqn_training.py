@@ -258,19 +258,38 @@ if __name__ == '__main__':
         parameters_dict[key] = {
             'value': parameters_dict[key]
         }
+    # parameters_dict.update({
+    #     'mlp_layers': {
+    #         'values': [[32,32], [64,64], [128,128]]
+    #         },
+    #     'learning_rate': {
+    #         'values': [0.0001, 0.00005, 0.00001]
+    #     },
+    #     'batch_size': {
+    #         'values': [32, 64, 128]
+    #     },
+    #     'discount_factor': {
+    #         'values': [0.99, 0.95, 0.9]
+    #     },
+    # })
+
+    # test update_target_estimator_every
     parameters_dict.update({
         'mlp_layers': {
-            'values': [[32,32], [64,64], [128,128]]
+            'value': [64,64]
             },
         'learning_rate': {
-            'values': [0.0001, 0.00005, 0.00001]
+            'value': 0.0001
         },
         'batch_size': {
-            'values': [32, 64, 128]
+            'value': 32
         },
         'discount_factor': {
-            'values': [0.99, 0.95, 0.9]
+            'value': 0.9
         },
+        'update_target_estimator_every': {
+            'values': [1, 500, 1000, 2000]
+        }
     })
 
     sweep_config['parameters'] = parameters_dict
@@ -278,4 +297,4 @@ if __name__ == '__main__':
 
     # os.environ["CUDA_VISIBLE_DEVICES"] = args.cuda
     # train(args)
-    wandb.agent(sweep_id, train, count=5)
+    wandb.agent(sweep_id, train, count=4)

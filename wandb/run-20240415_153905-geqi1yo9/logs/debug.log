@@ -1,0 +1,35 @@
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Configure stats pid to 13691
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Loading settings from /Users/xunyijiang/.config/wandb/settings
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Loading settings from /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/settings
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'AIPlanningProject', 'entity': 'nus-wing', 'root_dir': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject', 'run_id': 'geqi1yo9', 'sweep_param_path': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/sweep-et40tgns/config-geqi1yo9.yaml', 'sweep_id': 'et40tgns'}
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/training/dqn_training.py', 'program_abspath': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py', 'program': '/Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/src/training/dqn_training.py'}
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_init.py:_log_setup():528] Logging user logs to /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240415_153905-geqi1yo9/logs/debug.log
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/xunyijiang/Documents/StudyMaterials/2024Spring/AI planning/Project/RLProjectCode/GitHub/AIPlanningProject/wandb/run-20240415_153905-geqi1yo9/logs/debug-internal.log
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():568] calling init triggers
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():575] wandb.init called with sweep_config: {'algorithm': 'dqn', 'batch_size': 32, 'cuda': '', 'debug': False, 'discount_factor': 0.9, 'env': 'limit-holdem', 'eps_start': 1, 'evaluate_every': 100, 'learning_rate': 0.0001, 'log_dir': 'src/results/limited_holdem_results/test1', 'mlp_layers': [64, 64], 'num_episodes': 5000, 'num_eval_games': 2000, 'num_players': 3, 'seed': 42, 'train_every': 1, 'update_target_estimator_every': 500}
+config: {}
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():618] starting backend
+2024-04-15 15:39:05,193 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():622] setting up manager
+2024-04-15 15:39:05,196 INFO    Thread-14 (_run_job):13691 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-04-15 15:39:05,196 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():628] backend started and connected
+2024-04-15 15:39:05,201 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_config_callback():1324] config_cb None None {'algorithm': 'dqn', 'batch_size': 32, 'cuda': '', 'debug': False, 'discount_factor': 0.9, 'env': 'limit-holdem', 'eps_start': 1, 'evaluate_every': 100, 'learning_rate': 0.0001, 'log_dir': 'src/results/limited_holdem_results/test1', 'mlp_layers': [64, 64], 'num_episodes': 5000, 'num_eval_games': 2000, 'num_players': 3, 'seed': 42, 'train_every': 1, 'update_target_estimator_every': 500}
+2024-04-15 15:39:05,204 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():720] updated telemetry
+2024-04-15 15:39:05,219 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-04-15 15:39:05,732 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_on_init():2220] communicating current version
+2024-04-15 15:39:05,784 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-04-15 15:39:05,784 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():804] starting run threads in backend
+2024-04-15 15:39:05,822 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_console_start():2199] atexit reg
+2024-04-15 15:39:05,822 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2024-04-15 15:39:05,822 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2024-04-15 15:39:05,822 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_redirect():2144] Redirects installed.
+2024-04-15 15:39:05,823 INFO    Thread-14 (_run_job):13691 [wandb_init.py:init():845] run started, returning control to user process
+2024-04-15 15:43:48,535 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_finish():1934] finishing run nus-wing/AIPlanningProject/geqi1yo9
+2024-04-15 15:43:48,537 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2024-04-15 15:43:48,537 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_restore():2151] restore
+2024-04-15 15:43:48,537 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_restore():2157] restore done
+2024-04-15 15:43:53,848 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-04-15 15:43:53,848 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-04-15 15:43:53,850 INFO    Thread-14 (_run_job):13691 [wandb_run.py:_footer_sync_info():3558] logging synced files

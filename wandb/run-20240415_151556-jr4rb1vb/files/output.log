@@ -1,0 +1,7 @@
+--> Running on the CPU
+[64, 64]
+72
+[64, 64]
+72
+src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth
+Model saved in src/results/limited_holdem_results/lr=0.0001_mlp=[64,64]_bs=32_df=0.9/model.pth
